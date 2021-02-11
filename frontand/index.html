@@ -4,27 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ca6d8abecc.js" crossorigin="anonymous"></script>
+    <!-- Title-->
     <title>NGO Banco de dados</title>
+
   </head>
 
   <body>
-    <form action="http://localhost:3333/createduser" method="post" type="submit" id="form">
-      <label for="" >Nome</label>
-      <input type="text" name="nome" id="nome">   
-      <label for="">Email</label>
-      <input type="text" name="email" id="email">
-      <label for="">senha</label>
-      <input type="password" name="senha" id="senha">
-      <label for="">confsenha</label>
-      <input type="password" name="confsenha" id="confsenha">
-      <button type="submit" id="button">enviar</button>
-    </form>
     
+    <header id="header">
+      <!--Logo-->
+      <a href=""><img src="./imagens/logo.png" width="200px" alt=""></a>
+      
+      <!--Botão de login e registrar-->
+      <nav id="login">
+          <li><a href="">Login</a></li>
+          <li><a href="" class="botao btn-one" >Cadastrar</a></li>
+      </nav>
+    </header>
+
+    <main class="flex">
+      <div id="coluna-lateral">
+        <ul>
+          <li><button type=""><i class="fas fa-user-plus"></i> Visualizar contatos</button></li>
+          <li><button type=" "> <i class="fas fa-address-book"></i> Criar contatos</button></li>
+        </ul>
+      </div>
+
+      <div id="coluna-principal">
+        <div class="cabecalho">
+           <h2><i class="fas fa-list-ul"></i> Lista de contatos</h2>
+        </div>
+
+        <div class="container">
+          <span><i class="fas fa-ellipsis-v"></i></span>
+          <p>Nome:</p>
+          <p>Email:</p>
+          <p>Telefone:</p>
+          <button><i class="fas fa-pencil-alt"></i></button>
+          <button><i class="fas fa-trash"></i></button>
+        </div>
+
+      </div>
 
 
 
-    <script src="metods.js"></script>
+    </main>
+
+
+
+
     
   </body>
 </html>

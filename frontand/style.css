@@ -1,0 +1,175 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #FCFCFC;
+  width: 100%;
+  position: fixed;
+}
+
+/* Cabeçalho */
+#header{
+  background-image: linear-gradient( to bottom,
+  #FF9F0F,#e1c12169 );
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+#login{
+  display: flex;
+}
+
+#login li a{
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 1.2em;
+  margin: 0px 10px;
+  padding: 5px;
+  text-align: center;
+  line-height: 1em;
+  cursor: pointer;
+}
+
+/* Classe para botão de registrar */
+.botao{
+  line-height: 50px;
+	height: 50px;
+	text-align: center;
+	cursor: pointer;
+  
+}
+/* Efeito de botão de registrar */
+.btn-one {
+	color: rgb(0, 0, 0);
+	transition: all 0.3s;
+	position: relative;
+}
+.btn-one span {
+	transition: all 0.3s;
+}
+.btn-one::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(0, 0, 0, 0.411);
+	border-bottom-color: rgba(0, 0, 0, 0.411);
+	transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+	letter-spacing: 5px;
+}
+.btn-one:hover::before {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+.btn-one::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.226);
+  border-radius: 5px;
+}
+.btn-one:hover::after {
+	opacity: 0;	
+	transform: scale(0.1, 1);
+}
+
+/*MAIN*/
+
+/* Flex-box Colunas */
+.flex{
+  display: grid;
+  grid-column: 2;
+  grid-gap: 15px;
+}
+
+.flex > div{
+  width: 100%;
+  height: 1000px; ;
+}
+
+/* Organização das colunas */
+
+#coluna-lateral{
+  grid-column: 1 / 2 ;
+  height: 100%;
+  width: 100%;
+  max-width: 1800px;
+  background-color: #f0f0f0;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.116);
+}
+
+#coluna-lateral ul li button{
+  border-right: none!important;
+  border-left: none!important;
+  border-top: none!important;
+  border-bottom: 1px solid #ffffff;
+  width: 100%;
+  margin: 0 auto;
+  height: 50px;
+  font-size: 1.2em;
+}
+
+#coluna-lateral ul li button:hover{
+ background-color: rgb(255, 255, 255);
+ color: rgb(0, 0, 0);
+}
+
+
+/* Coluna principal */
+#coluna-principal{
+  grid-column: 2 /12 ;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.cabecalho{
+  width: 100%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.container{
+  border-bottom:1px solid #bdbcbc;
+  width: 100%;
+  padding: 20px 0px;
+  margin: 10px 0px;
+}
+
+.container p{
+  display: inline-flex;
+  margin: 0px 15px;
+  font-weight: bold;
+}
+
+.container button{
+  margin: 0px 8px;
+  float: right;
+}
+
+
+
+
