@@ -36,7 +36,7 @@ São Gabriel e na mesma tenho diversas experiências de como são os processos d
 arquitetura de dados e desenvolvimento back-and voltando a linguagem JAVA.
 Tenho trabalhos que foram desenvolvidos dentro do âmbito estudantil, como:
  <ol>
-  <li> <strong>Venda de mascaras</strong> </li>
+  <li> <strong>Venda de mascaras:</strong> </li>
   
   <p>Aplicação de conceitos básicos de repetição, como FOR, While, Switch/case em Java.</p>
   
@@ -46,7 +46,7 @@ Tenho trabalhos que foram desenvolvidos dentro do âmbito estudantil, como:
   <br>
   <br>
   
-  <li> <strong>SearchMed - Procura médica</strong> </li>
+  <li> <strong>SearchMed - Procura médica:</strong> </li>
   
   <p>Realizado com a ajuda de um grupo da faculdade, feito como trabalho final da matéria de Desenvolvimento WEB 
   na faculdade, em que foi utilizado HTML, CSS e JavaScript, tendo como foco o armazenamento de dados no LocalStorage.</p>
