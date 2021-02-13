@@ -40,7 +40,7 @@ Tenho trabalhos que foram desenvolvidos dentro do âmbito estudantil, como:
   
   <p>Aplicação de conceitos básicos de repetição, como FOR, While, Switch/case em Java.</p>
   
-  <h4>Para acessar o projeto:</h4>
+  <h2>Para acessar o projeto:</h2>
   <a href="https://github.com/maeceloacm1998/VendasDeMascaras">Clique Aqui ! </a>
   
   <br>
@@ -50,7 +50,7 @@ Tenho trabalhos que foram desenvolvidos dentro do âmbito estudantil, como:
   <p>Realizado com a ajuda de um grupo da faculdade, feito como trabalho final da matéria de Desenvolvimento WEB 
   na faculdade, em que foi utilizado HTML, CSS e JavaScript, tendo como foco o armazenamento de dados no LocalStorage.</p>
   
-  <h4>Para acessar o projeto:</h4>
+  <h2>Para acessar o projeto:</h2>
   <a href="https://github.com/maeceloacm1998/BuscaMedica">Clique Aqui ! </a>
  
 </ol>
