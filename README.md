@@ -101,10 +101,14 @@ com o express.js para criar uma aplicação simples que crie uma lista de contat
   <li>Mongoose</li>
   <li> Nodemon (não é pré-requisito, mas facilita o uso) </li>
 </ul>
-  
-<h2 Guia </h2> 
-- Faça FORK desse projeto
-- Clone o seu repositorio criado com o comando `git clone https://github.com/maeceloacm1998/NGOServerteste.git`
--
+
+## Guia
+
+1. Faça FORK desse projeto para o seu repositório 
+2. Clone o repositório com o comando `git clone https://github.com/maeceloacm1998/NGOServerteste.git`
+3. Siga o diretório cd "<nome da sua pasta>/api" no terminal usando o "cd"
+4. Instalar todas as dependências utilizando `npm install dependencies`
+5. Recomendo instalar o nodemon, utilizando `npm install nodemon`
+6. Após isso rodar a aplicação utilizando `nodemon src/server.js`
 
 
