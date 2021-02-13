@@ -45,7 +45,6 @@ Tenho trabalhos que foram desenvolvidos dentro do âmbito estudantil, como:
   
   <br>
   <br>
-  <br>
   
   <li> <strong>SearchMed - Procura médica</strong> </li>
   
