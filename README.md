@@ -38,7 +38,8 @@ Tenho trabalhos que foram desenvolvidos dentro do âmbito estudantil, como:
  <ol>
   <li> <strong>Venda de mascaras:</strong> </li>
   
-  <p>Aplicação de conceitos básicos de repetição, como FOR, While, Switch/case em Java.</p>
+  <p>Esse programa foi feito com conhecimentos básicos de Java, aplicando estruturas de repetição e lógica. 
+  O intuito desse programa é dar uma solução de venda e organização para um vendedor autônomo de máscaras na pandemia.</p>
   
   <h2>Para acessar o projeto:</h2>
   <a href="https://github.com/maeceloacm1998/VendasDeMascaras">Clique Aqui ! </a>
