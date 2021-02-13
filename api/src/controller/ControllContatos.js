@@ -8,9 +8,9 @@ const User = require('../models/User');
 class ControllContato {
   // Procurando por usuário
   async index(req, res) {
-    const { user_id } = req.headers;
+    const { status } = req.body;
 
-    const search = await Conteudo.find({ user: user_id });
+    const search = await Conteudo.find({ status });
 
     res.json(search);
   }
@@ -18,21 +18,21 @@ class ControllContato {
   // Criando Contatos
   async store(req, res) {
     const {
-      nome, email, telefone,
+      nome, email, telefone, status,
     } = req.body;
 
-    const { user_id } = req.headers;
-
-    const contato = await Conteudo.find({ nome, email, telefone });
+    const contato = await Conteudo.find({
+      nome, email, telefone, status,
+    });
 
     if (contato.length !== 0) {
       res.json({ 'Esse contato ja foi criado:': contato });
     } else {
       const createContato = await Conteudo.create({
-        user: user_id,
         nome,
         email,
         telefone,
+        status,
       });
 
       res.json({ 'Usuário Criado:': createContato });

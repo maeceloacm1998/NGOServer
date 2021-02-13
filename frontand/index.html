@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
@@ -15,49 +16,87 @@
   </head>
 
   <body>
-    
+    <!-- Header -->
     <header id="header">
       <!--Logo-->
       <a href=""><img src="./imagens/logo.png" width="200px" alt=""></a>
       
       <!--Botão de login e registrar-->
       <nav id="login">
-          <li><a href="">Login</a></li>
+          <li><a href=""  class="botao" >Login</a></li>
           <li><a href="" class="botao btn-one" >Cadastrar</a></li>
       </nav>
     </header>
 
+    
     <main class="flex">
+
+      <!-- Coluna Lateral -->
       <div id="coluna-lateral">
         <ul>
-          <li><button type=""><i class="fas fa-user-plus"></i> Visualizar contatos</button></li>
-          <li><button type=" "> <i class="fas fa-address-book"></i> Criar contatos</button></li>
+          <li><button onclick="contatos()"><i class="fas fa-user-plus"></i> Visualizar contatos</button></li>
+          <li><button > <i class="fas fa-address-book"></i> Criar contatos</button></li>
         </ul>
       </div>
-
+    
+      <!-- Coluna Principal -->
       <div id="coluna-principal">
+
+        <!-- Titulo lista de contatos -->
         <div class="cabecalho">
            <h2><i class="fas fa-list-ul"></i> Lista de contatos</h2>
         </div>
 
-        <div class="container">
-          <span><i class="fas fa-ellipsis-v"></i></span>
-          <p>Nome:</p>
-          <p>Email:</p>
-          <p>Telefone:</p>
-          <button><i class="fas fa-pencil-alt"></i></button>
-          <button><i class="fas fa-trash"></i></button>
+        <!-- Container de contatos -->
+        <div class="container-div">
+
+          <div class="container-contatos">
+
+            <div>
+              <span><i class="fas fa-ellipsis-v"></i></span>
+            </div>
+
+            <div>
+              <p><i class="fas fa-user"></i> Nome: Marcelo Antônio Chaves Mendes</p>
+              <p><i class="fas fa-envelope"></i> Email: maeceloacm1998@gmail.com</p>
+              <p><i class="fas fa-phone-square"></i> Telefone: (31)992521566</p>
+            </div>
+
+          </div>
+
+          <div class="container-btn">
+            <button data-toggle="tooltip" title="Editar" data-placement="top" ><i class="fas fa-pencil-alt"></i></button>
+            <button data-toggle="tooltip" title="Excluir" data-placement="top"><i class="fas fa-trash"></i></button>
+          </div>
+
         </div>
 
       </div>
 
-
-
     </main>
 
 
+    <!-- Chamada do Jquery e booststrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <!-- Chamada JavaScrip interno -->
+    <script>
+    function contatos(){
+      fetch('http://localhost:3333/')  
+        .then( response => response.json() )
+        .then( dados =>{
+          console.log(dados)
+        })
 
-
-    
+    }
+    </script>
+    <script src="./tooltipe.js"></script>
   </body>
 </html>

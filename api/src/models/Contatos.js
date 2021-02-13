@@ -4,10 +4,7 @@ const ContatosSchema = new Schema({
   nome: String,
   email: String,
   telefone: String,
-  user: {
-    type: Schema.Types.ObjectId,
-    ref: 'User',
-  },
+  status: Boolean,
 });
 
 module.exports = model('Contatos', ContatosSchema);

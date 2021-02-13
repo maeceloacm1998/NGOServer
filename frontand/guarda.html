@@ -4,27 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ca6d8abecc.js" crossorigin="anonymous"></script>
 
     <title>NGO Banco de dados</title>
   </head>
 
   <body>
-    <form action="http://localhost:3333/createduser" method="post" type="submit" id="form">
-      <label for="" >Nome</label>
-      <input type="text" name="nome" id="nome">   
+    <form>  
+      <input type="text" id="nome" >
       <label for="">Email</label>
-      <input type="text" name="email" id="email">
-      <label for="">senha</label>
-      <input type="password" name="senha" id="senha">
-      <label for="">confsenha</label>
-      <input type="password" name="confsenha" id="confsenha">
-      <button type="submit" id="button">enviar</button>
+      <input type="text" id="email">
+      <label for="">Telefone</label>
+      <input type="text" id="telefone">
+      
+      <button type="submit" id="botao">enviar</button>
     </form>
+  
+    <!-- Exibindo os contatos -->
+    <button id="btn">Response</button>
     
+      <div id="coluna-principal">
+        
+
+      </div>
 
 
 
-    <script src="metods.js"></script>
+
+
+    <script src="./methodes.js"></script>
     
   </body>
 </html>

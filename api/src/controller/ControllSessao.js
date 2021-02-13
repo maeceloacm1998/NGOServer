@@ -29,6 +29,7 @@ class ControllSessao {
     const {
       nome, email, senha, confsenha,
     } = req.body;
+    console.log(nome);
 
     // Segunda parte - Lógica (Procura por email e senha dentro do banco de dados).
     const user = await User.find({ email, senha });
@@ -44,12 +45,12 @@ class ControllSessao {
     }
 
     // Criação do usuário caso atenda as exigencias;
-    await User.create({
+    const UserCreate = await User.create({
       nome, email, senha, confsenha,
     });
 
     // Retorno da criação do usuário
-    return res.send();
+    return res.json({ 'Usuário foi criado ': UserCreate });
   }
 }
 

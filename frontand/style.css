@@ -1,9 +1,9 @@
 *{
   margin: 0px;
   padding: 0px;
-  list-style: none;
+  list-style: none !important;
   box-sizing: border-box;
-  text-decoration: none;
+  text-decoration: none !important;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -16,7 +16,7 @@ body {
 /* Cabeçalho */
 #header{
   background-image: linear-gradient( to bottom,
-  #FF9F0F,#e1c12169 );
+  #ffe71273,#FFC700 );
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -40,12 +40,17 @@ body {
 
 /* Classe para botão de registrar */
 .botao{
+  color: black;
   line-height: 50px;
 	height: 50px;
 	text-align: center;
 	cursor: pointer;
-  
 }
+
+.botao:hover{
+  color: black;
+}
+
 /* Efeito de botão de registrar */
 .btn-one {
 	color: rgb(0, 0, 0);
@@ -103,12 +108,12 @@ body {
 .flex{
   display: grid;
   grid-column: 2;
-  grid-gap: 15px;
+  grid-gap: 20px;
 }
 
 .flex > div{
   width: 100%;
-  height: 1000px; ;
+  height: 1000px; 
 }
 
 /* Organização das colunas */
@@ -118,7 +123,7 @@ body {
   height: 100%;
   width: 100%;
   max-width: 1800px;
-  background-color: #f0f0f0;
+  background-color: #e6e6e61f;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.116);
 }
 
@@ -127,6 +132,7 @@ body {
   border-left: none!important;
   border-top: none!important;
   border-bottom: 1px solid #ffffff;
+  background: none;
   width: 100%;
   margin: 0 auto;
   height: 50px;
@@ -134,7 +140,7 @@ body {
 }
 
 #coluna-lateral ul li button:hover{
- background-color: rgb(255, 255, 255);
+ background-color: rgb(236, 236, 236);
  color: rgb(0, 0, 0);
 }
 
@@ -152,22 +158,59 @@ body {
   border-bottom: 1px solid rgb(185, 185, 185);
 }
 
-.container{
+/* Container de contatos */
+.container-div{
   border-bottom:1px solid #bdbcbc;
-  width: 100%;
-  padding: 20px 0px;
-  margin: 10px 0px;
+  display: grid;
 }
 
-.container p{
-  display: inline-flex;
-  margin: 0px 15px;
-  font-weight: bold;
+.container-div:hover{
+  background: #cccccc41;
 }
 
-.container button{
-  margin: 0px 8px;
-  float: right;
+.container-div > div{
+  margin: 15px 0px;
+}
+
+.container-contatos{
+ display: flex;
+ justify-content: flex-start;
+ margin: 0px;
+}
+
+.container-contatos span{
+  font-size: 25px;
+  color: #bdbcbc;
+  position: relative;
+  top: 40px;
+  padding: 0 15px;
+ }
+
+.container-contatos p{
+  padding: 2px 0px;
+  letter-spacing: 1px;
+}
+
+.container-btn {
+  grid-column: 10/11;
+}
+
+.container-btn button{
+  position: relative;
+  top: 70px;
+  background: rgb(255, 255, 255);
+  color: #919191;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  margin: 0px 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.container-btn button:hover{
+  transition:  all 0.5s;
+  background-color: rgb(236, 236, 236);
 }
 
 
