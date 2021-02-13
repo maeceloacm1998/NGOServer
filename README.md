@@ -5,7 +5,7 @@
 <h1>NGO SOLUÇÕES - Banco de dados</h1> 
 
 <!-- CABEÇALHO -->
-<p> <strong>Nome:</storng> Marcelo Antônio Chaves Mendes &nbsp;&nbsp;&nbsp;&nbsp; Vaga: Estágio de Desenvolvedor &nbsp;&nbsp;&nbsp;&nbsp; Contato: (31) 99252-1566 </p> 
+<p> Nome: Marcelo Antônio Chaves Mendes &nbsp;&nbsp;&nbsp;&nbsp; Vaga: Estágio de Desenvolvedor &nbsp;&nbsp;&nbsp;&nbsp; Contato: (31) 99252-1566 </p> 
 
 <h3>Experiência Profissonal</h3> 
 <p>Me chamo Marcelo, tenho 22 anos, nasci na cidade de Belo Horizonte - MG. A minha carreira profissional 
