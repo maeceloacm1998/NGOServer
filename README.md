@@ -7,10 +7,12 @@
 <!-- CABEÇALHO -->
 <p> Nome: Marcelo Antônio Chaves Mendes &nbsp;&nbsp;&nbsp;&nbsp; Vaga: Estágio de Desenvolvedor &nbsp;&nbsp;&nbsp;&nbsp; Contato: (31) 99252-1566 </p> 
 
+<!-- Experiência profissional -->
 <h3>Experiência Profissonal</h3> 
 <p>Me chamo Marcelo, tenho 22 anos, nasci na cidade de Belo Horizonte - MG. A minha carreira profissional 
 foi composta por duas empresas:
 </p>
+<!-- ul - Experiência profissional -->
 
 <ul>
   <li> <strong>Arte Brilho</strong> </li>
@@ -27,7 +29,9 @@ foi composta por duas empresas:
   que tivessem contatos viinculadas ao banco BMG.
   </p>
 </ul>
+
 <br>
+
 <p>
 Minhas experiências na área de tecnologia são pessoais, como a realização de cursos de desenvolvimento WEB,
 abordando CSS e HTML e JavaScrip, construção de API com NODEJS usando banco de dados NOSQL e MySQL, dentre
@@ -35,6 +39,8 @@ outros, através da plataforma Udemy. Além disso, faço faculdade de Sistemas d
 São Gabriel e na mesma tenho diversas experiências de como são os processos de produção de uma aplicação,
 arquitetura de dados e desenvolvimento back-and voltando a linguagem JAVA.
 Tenho trabalhos que foram desenvolvidos dentro do âmbito estudantil, como:
+  
+ <!-- ol - Projetos -->
  <ol>
   <li> <strong>Venda de mascaras:</strong> </li>
   
@@ -56,6 +62,7 @@ Tenho trabalhos que foram desenvolvidos dentro do âmbito estudantil, como:
   <a href="https://github.com/maeceloacm1998/BuscaMedica">Clique Aqui ! </a>
  
 </ol>
+
 <br>
   
 Meu objetivo é seguir a carreira como programador Full-Stack, me especializando na linguagem de JavaScript 
@@ -63,3 +70,35 @@ e suas respectivas bibliotecas, como React, React Native, pois a programação h
 possibilita fazer a diferença tanto para o meio empresarial, quanto ao lado humano, pois o produto final 
 sempre vai impactar algum usuário e com isso é possível fazer a diferença.
 </p>
+
+<hr> <!-- Linha -->
+
+<br>
+<!-- Título -->
+<h1>REST API em Node.js, Express.js - Cadastro e manipulação de contatos</h1>
+<blockquout>Utilizando o MongoDB para o aramazenamento dos dados</blockquout>
+
+<br>
+<!-- Descrição -->
+<p>Nessa aplicação foram criadas as seguintes funções: Criar contatos com nome, email e telefone, dashboard com todos contatos 
+criados, deletar contatos existentes, atualizar contato existente. Foi utilizado o Node.js com arquitetura REST, em conjunto 
+com o express.js para criar uma aplicação simples que crie uma lista de contatos. </p>
+
+<br>
+<!-- Tecnologias utilizadas -->
+<h2>Tecnologias utilizadas</h2>
+<ul>
+  <li>Node.js 14.15.5</li>
+  <li>Insomnia</li>
+  <li>MongoDB 4.4</li>
+<ul>
+
+<!-- Dependências -->
+<h2>Dependências</h2>
+<ul>
+  <li>Express.js</li>
+  <li>Cors</li>
+  <li>Body-Parser</li>
+  <li>Mongoose</li>
+  <li> Nodemon (não é pré-requisito, mas facilita o uso) </li>
+<ul>
