@@ -30,17 +30,34 @@ foi composta por duas empresas:
 <br>
 <p>
 Minhas experiências na área de tecnologia são pessoais, como a realização de cursos de desenvolvimento WEB,
-abordando CSS e HTML e JavaScrip, Construção de API com NODEJS usando banco de dados NOSQL e MySQL, dentre
+abordando CSS e HTML e JavaScrip, construção de API com NODEJS usando banco de dados NOSQL e MySQL, dentre
 outros, através da plataforma Udemy. Além disso, faço faculdade de Sistemas de Informação na PUC-MG, unidade
-São Gabriel e na mesma tenho diversas experiências de como são os processos de produçaõ de uma aplicação,
-arquitetura de dados, desenvolvimento back-and voltando a linguagem JAVA.
-Tenho trabalhos que foram desenvolvidos dentro do âmbito estudantil, como o projeto "Venda de mascaras",
-que conssite na aplicação de conceitos básicos de repetição, como for, while,Switch/case em Java, e o 
-"SerachMed - Procura médica", que foi realizado com a ajuda de um grupo da faculdade, feito como traba-
-lho final da matéria de Desenvolvimento WEB na faculdade, em que foi utilizado HTML, CSS e JavaScript, 
-tendo como foco o armazenamento de dados no LocalStorage. Meu objetivo é seguir a carreira como programador
-Full-Stack, me especializando na linguagem de JavaScript e suas respectivas bibliotecas, como React, React
-Native, pois a programação hoje é um trabalho que me possibilita fazer a diferença tanto para o meio empre-
-sarial, quanto ao lado humano, pois o produto final sempre vai impactar algum usuário e com isso é possível
-fazer a diferença.
+São Gabriel e na mesma tenho diversas experiências de como são os processos de produção de uma aplicação,
+arquitetura de dados e desenvolvimento back-and voltando a linguagem JAVA.
+Tenho trabalhos que foram desenvolvidos dentro do âmbito estudantil, como:
+ <ol>
+  <li> <strong>Venda de mascaras</strong> </li>
+  
+  <p>Aplicação de conceitos básicos de repetição, como FOR, While, Switch/case em Java.</p>
+  
+  <h4>Para acessar o projeto:</h4>
+  <a href="https://github.com/maeceloacm1998/VendasDeMascaras">Clique Aqui ! </a>
+  
+  <br>
+  
+  <li> <strong>SearchMed - Procura médica</strong> </li>
+  
+  <p>Realizado com a ajuda de um grupo da faculdade, feito como trabalho final da matéria de Desenvolvimento WEB 
+  na faculdade, em que foi utilizado HTML, CSS e JavaScript, tendo como foco o armazenamento de dados no LocalStorage.</p>
+  
+  <h4>Para acessar o projeto:</h4>
+  <a href="https://github.com/maeceloacm1998/BuscaMedica">Clique Aqui ! </a>
+ 
+</ol>
+<br>
+  
+Meu objetivo é seguir a carreira como programador Full-Stack, me especializando na linguagem de JavaScript 
+e suas respectivas bibliotecas, como React, React Native, pois a programação hoje é um trabalho que me 
+possibilita fazer a diferença tanto para o meio empresarial, quanto ao lado humano, pois o produto final 
+sempre vai impactar algum usuário e com isso é possível fazer a diferença.
 </p>
