@@ -92,11 +92,8 @@ com o express.js para criar uma aplicação simples que crie uma lista de contat
   <li>Insomnia</li>
   <li>MongoDB 4.4</li>
 <ul>
-  
-<br>
-
 <!-- Dependências -->
-<h2>Dependências</h2>
+  <h3>Dependenciasa</h3>
 <ul>
   <li>Express.js</li>
   <li>Cors</li>
