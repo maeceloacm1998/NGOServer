@@ -91,5 +91,20 @@ com o express.js para criar uma aplicação simples que crie uma lista de contat
   <li>Node.js 14.15.5</li>
   <li>Insomnia</li>
   <li>MongoDB 4.4</li>
+</ul>
+<!-- Dependências -->
+<h2>Dependencias</h2>
 <ul>
-  <h3>lala</h3>
+  <li>Express.js</li>
+  <li>Cors</li>
+  <li>Body-Parser</li>
+  <li>Mongoose</li>
+  <li> Nodemon (não é pré-requisito, mas facilita o uso) </li>
+</ul>
+  
+<h2 Guia </h2> 
+- Faça FORK desse projeto
+- Clone o seu repositorio criado com o comando `git clone https://github.com/maeceloacm1998/NGOServerteste.git`
+-
+
+
