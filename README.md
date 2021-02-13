@@ -44,6 +44,8 @@ Tenho trabalhos que foram desenvolvidos dentro do âmbito estudantil, como:
   <a href="https://github.com/maeceloacm1998/VendasDeMascaras">Clique Aqui ! </a>
   
   <br>
+  <br>
+  <br>
   
   <li> <strong>SearchMed - Procura médica</strong> </li>
   
