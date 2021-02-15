@@ -12,12 +12,12 @@ routes.post('/createcontact', ControllContact.store);
 
 // Parametros GET
 routes.get('/login', ControleSessao.index);
-routes.get('/contact', ControllContact.index);
+routes.get('/contact/:status', ControllContact.index);
 
 // Parametros PUT
 routes.put('/update/:id_contatos', ControllContact.update);
 
-// Parametros Delete
-routes.delete('/contact', ControllContact.destroy);
+// Parametros Deletes
+routes.delete('/delete/:id_contatos', ControllContact.destroy);
 
 module.exports = routes;

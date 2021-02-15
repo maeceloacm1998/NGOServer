@@ -13,7 +13,7 @@ body {
   position: fixed;
 }
 
-/* Cabeçalho */
+/************** Cabeçalho **************/
 #header{
   background-image: linear-gradient( to bottom,
   #ffe71273,#FFC700 );
@@ -38,7 +38,7 @@ body {
   cursor: pointer;
 }
 
-/* Classe para botão de registrar */
+/************** Classe para botão de registrar **************/
 .botao{
   color: black;
   line-height: 50px;
@@ -51,7 +51,7 @@ body {
   color: black;
 }
 
-/* Efeito de botão de registrar */
+/************** Efeito de botão de registrar **************/
 .btn-one {
 	color: rgb(0, 0, 0);
 	transition: all 0.3s;
@@ -102,24 +102,22 @@ body {
 	transform: scale(0.1, 1);
 }
 
-/*MAIN*/
+/*MAIN*/ 
 
-/* Flex-box Colunas */
+/************** Grid Colunas **************/
 .flex{
   display: grid;
-  grid-column: 2;
-  grid-gap: 20px;
+  grid-template-columns: 15% 85%;
 }
 
 .flex > div{
   width: 100%;
-  height: 1000px; 
+  height: 900px; 
 }
 
-/* Organização das colunas */
+/************** Organização das colunas **************/
 
 #coluna-lateral{
-  grid-column: 1 / 2 ;
   height: 100%;
   width: 100%;
   max-width: 1800px;
@@ -145,65 +143,73 @@ body {
 }
 
 
-/* Coluna principal */
-#coluna-principal{
-  grid-column: 2 /12 ;
-  margin-top: 15px;
-  width: 100%;
+/************** Container de Visualizar contatos **************/
+
+/*Usado para dar efeito de rolagem na página*/
+.scroll{
+  overflow-y: scroll;
 }
 
-.cabecalho{
-  width: 100%;
-  padding-bottom: 15px;
-  border-bottom: 1px solid rgb(185, 185, 185);
+.grid {
+	display: grid;
+}
+.cabecalho {
+	grid-area: cabecalho;
 }
 
-/* Container de contatos */
-.container-div{
-  border-bottom:1px solid #bdbcbc;
-  display: grid;
-}
-
-.container-div:hover{
-  background: #cccccc41;
-}
-
-.container-div > div{
-  margin: 15px 0px;
-}
-
-.container-contatos{
- display: flex;
- justify-content: flex-start;
- margin: 0px;
-}
-
-.container-contatos span{
-  font-size: 25px;
-  color: #bdbcbc;
-  position: relative;
-  top: 40px;
-  padding: 0 15px;
- }
-
-.container-contatos p{
-  padding: 2px 0px;
-  letter-spacing: 1px;
+.container-contatos {
+	grid-area: contatos;
 }
 
 .container-btn {
-  grid-column: 10/11;
+	grid-area: botao;
+}
+
+.grid-template-areas-1 {
+	grid-template-columns: 80% 20%;
+	grid-template-rows: 150px ;
+	grid-template-areas:
+		"contatos botao"
+		"contatos botao"
+	;
+}
+
+.cabecalho{
+  margin: 10px 20px;
+  border-bottom: 1px solid rgb(196, 196, 196);
+}
+
+.container-contatos{
+  border-bottom: 1px solid rgb(196, 196, 196);
+  margin-left: 20px;
+  display: flex;
+  
+}
+.container-contatos span{
+  margin: 20px;
+  font-size: 25px;
+  color: #bdbcbc;
+  position: relative;
+  top: 50px;
+  
+ }
+
+.container-contatos p{
+  margin-top: 18px;
+  letter-spacing: 1px;
+}
+
+.container-btn{
+  border-bottom: 1px solid rgb(196, 196, 196);
 }
 
 .container-btn button{
-  position: relative;
-  top: 70px;
   background: rgb(255, 255, 255);
   color: #919191;
   border: none;
   border-radius: 50%;
   padding: 12px;
-  margin: 0px 5px;
+  margin-top: 85px;
   font-size: 15px;
   cursor: pointer;
 }
@@ -211,6 +217,62 @@ body {
 .container-btn button:hover{
   transition:  all 0.5s;
   background-color: rgb(236, 236, 236);
+}
+
+/************** Container de Criar Contatos **************/
+#formulario{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+
+.nome {
+	grid-area: nome;
+}
+
+.email {
+  grid-area: email;
+}
+
+.telefone{
+  grid-area: telefone;
+}
+.btn-enviar{
+  grid-area: botao;
+}
+
+.grid-template-areas-2 {
+  display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 80px 80px 80px 50px;
+	grid-template-areas:
+		"nome"
+    "email"
+    "telefone"
+    "botao"
+}
+
+.nome input,
+.email input,
+.telefone input{
+  position: relative;
+  bottom: 12px;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 5px;
+  height: 35px;
+  width: 300px;
+}
+
+.nome p,
+.email p,
+.telefone p{
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 1.3em;
+}
+
+.btn-enviar button{
+  font-family: 'Reem Kufi', sans-serif;
+  padding: 5px 20px;
 }
 
 

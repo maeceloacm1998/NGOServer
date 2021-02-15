@@ -34,47 +34,53 @@
       <!-- Coluna Lateral -->
       <div id="coluna-lateral">
         <ul>
-          <li><button onclick="contatos()"><i class="fas fa-user-plus"></i> Visualizar contatos</button></li>
-          <li><button > <i class="fas fa-address-book"></i> Criar contatos</button></li>
+          <li><button id="btn-contact" ><i class="fas fa-user-plus"></i> Visualizar contatos</button></li>
+          <li><button id="btn-viwnCreateContact"> <i class="fas fa-address-book"></i> Criar contatos</button></li>
         </ul>
       </div>
-    
-      <!-- Coluna Principal -->
-      <div id="coluna-principal">
+      
+      <!-- Botão VIZUALISAR CONTATOS -->
+      <div id="coluna-principal" class="scroll">      
+          <!-- Contatos -->
+      </div>
 
-        <!-- Titulo lista de contatos -->
+      <!-- Botão CRIAR CONTATOS -->
+      <div id="coluna-criarContatos">    
+        
         <div class="cabecalho">
-           <h2><i class="fas fa-list-ul"></i> Lista de contatos</h2>
+          <h2><i class="fas fa-user-plus"></i> Criar Contatos</h2>
         </div>
 
-        <!-- Container de contatos -->
-        <div class="container-div">
-
-          <div class="container-contatos">
-
-            <div>
-              <span><i class="fas fa-ellipsis-v"></i></span>
+        <form id="formulario" >  
+          <div class="grid-template-areas-2">
+            <div class="nome">
+              <p>Nome:</p>
+              <input type="text" id="nome">
             </div>
-
-            <div>
-              <p><i class="fas fa-user"></i> Nome: Marcelo Antônio Chaves Mendes</p>
-              <p><i class="fas fa-envelope"></i> Email: maeceloacm1998@gmail.com</p>
-              <p><i class="fas fa-phone-square"></i> Telefone: (31)992521566</p>
+            
+            <div class="email">
+              <p>Email:</p>
+              <input type="text" id="email">
             </div>
-
+            <div class="telefone">
+              <p>Telefone:</p>
+              <input type="text" id="telefone">
+            </div>
+            
+            <div class="btn-enviar">
+              <button type="submit" id="botao"> <i class="fas fa-arrow-right"></i> Enviar</button>
+            </div>
           </div>
-
-          <div class="container-btn">
-            <button data-toggle="tooltip" title="Editar" data-placement="top" ><i class="fas fa-pencil-alt"></i></button>
-            <button data-toggle="tooltip" title="Excluir" data-placement="top"><i class="fas fa-trash"></i></button>
-          </div>
-
-        </div>
+          
+        </form>
 
       </div>
+
 
     </main>
 
+    <!-- Chamada JavaScrip interno -->
+    <script src="./methodes.js"></script>
 
     <!-- Chamada do Jquery e booststrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -86,17 +92,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
-    <!-- Chamada JavaScrip interno -->
-    <script>
-    function contatos(){
-      fetch('http://localhost:3333/')  
-        .then( response => response.json() )
-        .then( dados =>{
-          console.log(dados)
-        })
-
-    }
-    </script>
-    <script src="./tooltipe.js"></script>
   </body>
 </html>

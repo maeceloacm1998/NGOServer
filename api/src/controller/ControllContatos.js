@@ -3,12 +3,11 @@
 /* eslint-disable camelcase */
 /* eslint-disable class-methods-use-this */
 const Conteudo = require('../models/Contatos');
-const User = require('../models/User');
 
 class ControllContato {
   // Procurando por usuário
   async index(req, res) {
-    const { status } = req.body;
+    const { status } = req.params;
 
     const search = await Conteudo.find({ status });
 
@@ -43,41 +42,23 @@ class ControllContato {
   async update(req, res) {
     const { nome, email, telefone } = req.body;
     const { id_contatos } = req.params;
-    const { user_id } = req.headers;
-    const updateDados = await Conteudo.findById(id_contatos);
-    const user = await User.findById(user_id);
 
-    if ((String(user._id)) !== (String(updateDados.user))) {
-      res.status(401).json({ erro: 'Não autorizado' });
-    } else {
-      await Conteudo.updateOne({ _id: id_contatos }, {
-        user: user_id,
-        nome,
-        email,
-        telefone,
-      });
+    await Conteudo.updateOne({ _id: id_contatos }, {
+      nome,
+      email,
+      telefone,
+    });
 
-      res.json('Esse contato foi atualizado com sucesso');
-    }
+    res.json('Esse contato foi atualizado com sucesso');
   }
 
   // Deletando o contato
   async destroy(req, res) {
     // Primeira parte - requisição
-    const { id_contatos } = req.body;
-    const { user_id } = req.headers;
-    const contato = await Conteudo.findById(id_contatos);
-    const user = await User.findById(user_id);
+    const { id_contatos } = req.params;
 
-    if (contato !== null) {
-      if ((String(user._id)) !== (String(contato.user))) {
-        res.status(401).json({ erro: 'Não autorizado' });
-      } else {
-        await Conteudo.findByIdAndDelete({ _id: id_contatos });
-        res.json('Contato foi deletado com sucesso !');
-      }
-    }
-    res.json('Não existe esse contato na lista !');
+    await Conteudo.findByIdAndDelete({ _id: id_contatos });
+    res.json('Contato foi deletado com sucesso !');
   }
 }
 
