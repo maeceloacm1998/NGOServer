@@ -1,3 +1,11 @@
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+
 <!-- TÌTULO -->
 ![](frontand/imagens/logo.png)
 <img scr="frontand/imagens/logo.png">  <!-- Imagem -->
@@ -6,6 +14,7 @@
 
 <!-- CABEÇALHO -->
 <p> Nome: Marcelo Antônio Chaves Mendes &nbsp;&nbsp;&nbsp;&nbsp; Vaga: Estágio de Desenvolvedor &nbsp;&nbsp;&nbsp;&nbsp; Contato: (31) 99252-1566 </p> 
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- Experiência profissional -->
 <h3>Experiência Profissonal</h3> 
@@ -68,39 +77,41 @@ Tenho trabalhos que foram desenvolvidos dentro do âmbito estudantil, como:
 Meu objetivo é seguir a carreira como programador Full-Stack, me especializando na linguagem de JavaScript 
 e suas respectivas bibliotecas, como React, React Native, pois a programação hoje é um trabalho que me 
 possibilita fazer a diferença tanto para o meio empresarial, quanto ao lado humano, pois o produto final 
-sempre vai impactar algum usuário e com isso é possível fazer a diferença.
+sempre vai impactar algum usuário e com isso é possível faaazer a diferença.
 </p>
 
 <hr> <!-- Linha -->
 
 <br>
+
 <!-- Título -->
-<h1>REST API em Node.js, Express.js - Cadastro e manipulação de contatos</h1>
+# REST API em Node.js, Express.js - Cadastro e manipulação de contatos
 <blockquout>Utilizando o MongoDB para o aramazenamento dos dados</blockquout>
 
 <br>
 <!-- Descrição -->
-<p>Nessa aplicação foram criadas as seguintes funções: Criar contatos com nome, email e telefone, dashboard com todos contatos 
+Nessa aplicação foram criadas as seguintes funções: Criar contatos com nome, email e telefone, dashboard com todos contatos 
 criados, deletar contatos existentes, atualizar contato existente. Foi utilizado o Node.js com arquitetura REST, em conjunto 
-com o express.js para criar uma aplicação simples que crie uma lista de contatos. </p>
+com o express.js para criar uma aplicação simples que crie uma lista de contatos. 
 
 <br>
+
 <!-- Tecnologias utilizadas -->
-<h2>Tecnologias utilizadas</h2>
-<ul>
-  <li>Node.js 14.15.5</li>
-  <li>Insomnia</li>
-  <li>MongoDB 4.4</li>
-</ul>
+## Tecnologias utilizadas
+
+- Node.js 14.15.5
+- Insomnia
+- MongoDB 4.4
+
+
 <!-- Dependências -->
-<h2>Dependencias</h2>
-<ul>
-  <li>Express.js</li>
-  <li>Cors</li>
-  <li>Body-Parser</li>
-  <li>Mongoose</li>
-  <li> Nodemon (não é pré-requisito, mas facilita o uso) </li>
-</ul>
+## Dependencias
+
+- Express.js
+- Cors
+- Body-Parser
+- Mongoose
+- Nodemon (não é pré-requisito, mas facilita o uso) 
 
 ## Guia
 
