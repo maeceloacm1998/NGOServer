@@ -90,8 +90,6 @@ Nessa aplicação foram criadas as seguintes funções: Criar contatos com nome,
 criados, deletar contatos existentes, atualizar contato existente. Foi utilizado o Node.js com arquitetura REST, em conjunto 
 com o express.js para criar uma aplicação simples que crie uma lista de contatos. 
 
-<br>
-
 <!-- Tecnologias utilizadas -->
 ## Tecnologias utilizadas
 
