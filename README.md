@@ -1,16 +1,10 @@
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
 <!-- TÌTULO -->
 ![](frontand/imagens/logo.png)
 <img scr="frontand/imagens/logo.png">  <!-- Imagem -->
 
 <h1>NGO SOLUÇÕES - Banco de dados</h1> 
+
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- CABEÇALHO -->
 <p> Nome: Marcelo Antônio Chaves Mendes &nbsp;&nbsp;&nbsp;&nbsp; Vaga: Estágio de Desenvolvedor &nbsp;&nbsp;&nbsp;&nbsp; Contato: (31) 99252-1566 </p> 
@@ -175,3 +169,11 @@ Foram totalmente realizados no ambiente automatizado do Insominia, onde foi cria
 # Créditos
 Essa API foi desenvolvida e documentada por Marcelo Antônio Chaves Mendes, no dia 16/02/2021.
 
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/maeceloacm1998
+[product-screenshot]: images/screenshot.png
