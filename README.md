@@ -142,24 +142,24 @@ src/
    └─ server.js
 ```
 
-### src/app.js
+**####src/app.js**
 
 Aqui encontra-se toda a estrutura da minha aplicação como a chamada para as rotas, os middlewares, a inclusão das dependências,
 os constructores e a conexão com o MongoDB.
 
-### src/routes.js
+**####src/routes.js**
 
 Aqui encontra-se todas as rotas para cada tipo de requisição.
 
-### src/server.js
+**####src/server.js**
 
 Aqui encontra-se apenas a porta que meu servidor local vai utilizar.
 
-#### src/controller/ControllContatos.js
+**####src/controller/ControllContatos.js**
 
 Nessa sessão temos todas estruturas de requisição de contatos com os parametros GET, POST, PUT e DELETE.
 
-#### src/model/Contact.js
+**####src/model/Contact.js**
 
 Nessa sessão temos o Schema e o Model dos contatos que será passado para o meu banco de dados.
 
