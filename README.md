@@ -121,11 +121,11 @@ A seguir está uma configuração generica do localhost na posta 3333.
 - Criação de contatos - POST: http://localhost:3333/createcontact
   .Usado para criar um contato novo contendo **NOME**, **EMAIL** e **TELEFONE** de cada contato.
   
+- Lista de contatos - PUT: http://localhost:3333/update/:id_contatos'
+  .Usado para atualizar o contato que você desejar. Para isso você vai inserir o _id que cada contato tem e inserir na URL depois do `update/`.  
+  
 - Lista de contatos - DELETE: http://localhost:3333/delete/:id_contato
   .Usado para deletar um contato da lista. Para isso você vai inserir o _id que cada contato tem e inserir na URL depois do `delete/`.
-  
-- Lista de contatos - DELETE: http://localhost:3333/update/:id_contatos'
-  .Usado para atualizar o contato que você desejar. Para isso você vai inserir o _id que cada contato tem e inserir na URL depois do `update/`.  
   
 ## Estrutura da Api REST
 A estrutura da api consiste:
