@@ -81,8 +81,6 @@ sempre vai impactar algum usuário e com isso é possível faaazer a diferença.
 
 <hr> <!-- Linha -->
 
-<br>
-
 <!-- Título -->
 # REST API em Node.js, Express.js - Cadastro e manipulação de contatos
 > Utilizando o MongoDB para o aramazenamento dos dados
