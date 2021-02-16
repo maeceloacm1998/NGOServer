@@ -10,6 +10,7 @@
 body {
   background-color: #FCFCFC;
   width: 100%;
+  height: 100%;
   position: fixed;
 }
 
@@ -28,9 +29,21 @@ body {
 /*MAIN*/ 
 
 /************** Grid Colunas **************/
+#coluna-lateral{
+  grid-area: lateral;
+}
+
+#coluna-principal{
+  grid-area: principal;
+} 
+
 .flex{
   display: grid;
   grid-template-columns: 15% 85%;
+  grid-template-rows: 100% 100% ;
+  grid-template-areas:
+		"lateral principal"
+	;
 }
 
 .flex > div{
@@ -320,6 +333,7 @@ body {
 }
 
 .conteudo-extra p{
+  width: 100%;
   font-family: 'Reem Kufi', sans-serif;
   font-size: 1.2em;
   text-align: justify;
@@ -379,6 +393,9 @@ body {
 
 @media screen and (min-width:300px) and (max-width:425px){
 
+  body{
+    position: relative;
+  }
 
   .none{
     display: none;
@@ -400,17 +417,18 @@ body {
 		"lateral lateral"
     "principal principal" 
     ;
+
   }
 
   .flex > div{
     width: 100%;
-    height: 450px; 
+    height: 100%;
   }
 
-  /* Coluna principal */
+  /* Coluna Vizualizar contatos */
   .grid-template-areas-1 {
     grid-template-columns: 70% 30%;
-    grid-template-rows: 200px ;
+    grid-template-rows: 200px 0px;
     grid-template-areas:
       "contatos botao"
       "contatos botao"
@@ -424,25 +442,29 @@ body {
     position:relative;
     top: 0px;
     left: 0px;
+    background: none;
   }
 
   .form-edit{
-   padding-right: 20px;
- }
+    padding-right: 20px;
+  }
 
  .header-edit{
-  border-radius:0px;
+    background: none;
+    margin: 10px 20px;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    border-radius:0px;
   
-}
+  }
 
-  /* Coluna lateral */
+  /* Coluna criar contatos*/
   #formulario{
     margin-right: 40px;
   }
 
   .grid-template-areas-2 {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 92%;
     grid-template-rows: 80px 80px 80px 40px 200px;
     grid-template-areas:
       "nome "
@@ -451,14 +473,6 @@ body {
       "botao "
       "message "
       ;
-  }
-
-  .error-box-success{
-    width: 100%;
-  }
-
-  .error-box-erro{
-    width: 100%;
   }
 
   .nome input,
@@ -475,19 +489,109 @@ body {
     margin-left: 0px;
   }
 
+  /* caixa de mensagem */
+
+  .error-box-success{
+    width: 100%;
+  }
+
+  .error-box-erro{
+    width: 100%;
+  }
+
+  .error-box-erro p{
+    border: 1px solid blue;
+    margin: 25px auto;
+    width: 100%;
+  }
+
+  .error-box-success-dois{
+    width: 100%;
+  }
   
+  .error-box-erro-dois{
+    width: 100%;
+  }
+
 }
 
-@media screen and (min-width:430px) and (max-width:1024px){
+/** TABLET **/
 
+@media screen and (min-width:426px) and (max-width:768px){
+
+  body{
+    position: relative;
+  }
+  
   .none{
     display: none;
   }
 
-  /* Coluna Lateral */
+  #coluna-lateral{
+    grid-area: lateral;
+  }
+
+  #coluna-principal{
+    grid-area: principal;
+  } 
+
+  .flex{
+    display: grid;
+    grid-template-columns: 10% 90%;
+	  grid-template-rows: 100px ;
+	  grid-template-areas:
+		"lateral lateral"
+    "principal principal" 
+    ;
+
+  }
+
+  .flex > div{
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Coluna Vizualizar contatos */
+  .grid-template-areas-1 {
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 200px 0px;
+    grid-template-areas:
+      "contatos botao"
+      "contatos botao"
+    ;
+  }
+
+  /* EDIT */
+  .edit-contact{
+    width: 100%;
+    height: 500px;
+    position:relative;
+    top: 0px;
+    left: 0px;
+    background: none;
+  }
+
+  .form-edit{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+ .header-edit{
+    background: none;
+    margin: 10px 20px;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    border-radius:0px;
+  
+  }
+
+  /* Coluna criar contatos*/
+  #formulario{
+    margin-right: 40px;
+  }
+
   .grid-template-areas-2 {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 92%;
     grid-template-rows: 80px 80px 80px 40px 200px;
     grid-template-areas:
       "nome "
@@ -498,5 +602,228 @@ body {
       ;
   }
 
+  .nome input,
+  .email input,
+  .telefone input{
+    width: 100%;
+  }
+
+  .btn-enviar{
+    width: 100%;
+  }
+
+  .btn-enviar button{
+    margin-left: 0px;
+  }
+
+  /* caixa de mensagem */
+
+  .error-box-success{
+    width: 100%;
+  }
+
+  .error-box-erro{
+    width: 100%;
+  }
+
+  .error-box-success-dois{
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .error-box-success-dois p{
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  
+  .error-box-success{
+    width: 100%;
+  }
  
+}
+
+/* Tela de notebook */
+
+@media screen and (min-width:769px) and (max-width:1024px){
+
+  #coluna-lateral{
+    grid-area: lateral;
+  }
+
+  #coluna-principal{
+    grid-area: principal;
+  } 
+
+  .flex{
+    display: grid;
+    grid-template-columns: 20% 80%;
+	  grid-template-rows: 100px 100% ;
+	  grid-template-areas:
+		"lateral principal"
+    "lateral principal" 
+    ;
+  }
+
+  .flex > div{
+    width: 100%;
+    height: 850px;
+  }
+
+  /* Editar contatos */
+  /* EDIT */
+  .edit-contact{
+    width: 50%;
+    height: 530px;
+    position:relative;
+    top: 180px;
+    left: 200px;
+
+  }
+
+  .form-edit{
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+
+ .header-edit{
+    width: 100%;
+    border-bottom: 1px solid rgb(196, 196, 196);
+  
+  }
+
+  /* Criar contatos */
+  .grid-template-areas-2 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 80px 80px 80px 50px 400px;
+    grid-template-areas:
+      "nome lateral"
+      "email lateral"
+      "telefone lateral"
+      "botao lateral"
+      "message lateral"
+    ;
+  }
+
+  /*** Barra lateral ***/
+  .conteudo-extra{
+  padding: 0px 40px;
+  }
+
+  /* caixa de mensagem */
+
+  .message{
+    margin-right: 30px;
+  }
+
+  .error-box-success{
+    width: 100%;
+  }
+
+  .error-box-erro{
+    margin-right: 20px;
+    width: 100%;
+  }
+
+  .error-box-success-dois{
+
+    width: 100%;
+  }
+
+  .error-box-success-dois p{
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width:1025px) {
+
+  #coluna-lateral{
+    grid-area: lateral;
+  }
+
+  #coluna-principal{
+    grid-area: principal;
+  } 
+
+  .flex{
+    display: grid;
+    grid-template-columns: 20% 80%;
+	  grid-template-rows: 100px 100% ;
+	  grid-template-areas:
+		"lateral principal"
+    "lateral principal" 
+    ;
+  }
+
+  .flex > div{
+    width: 100%;
+    height: 760px;
+  }
+
+  /* Editar contatos */
+  .edit-contact{
+    width: 35%;
+    height: 530px;
+    position:relative;
+    top: 110px;
+    left: 350px;
+
+  }
+
+  .form-edit{
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+
+ .header-edit{
+    width: 100%;
+    border-bottom: 1px solid rgb(196, 196, 196);
+  
+  }
+
+  /* Criar contatos */
+  .grid-template-areas-2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80px 80px 80px 50px 400px;
+    grid-template-areas:
+      "nome lateral"
+      "email lateral"
+      "telefone lateral"
+      "botao lateral"
+      "message lateral"
+    ;
+  }
+
+  /*** Barra lateral ***/
+  .conteudo-extra{
+  padding: 0px 40px;
+  }
+
+  /* caixa de mensagem */
+
+  .message{
+    margin-right: 30px;
+  }
+
+  .error-box-success{
+    width: 100%;
+  }
+
+  .error-box-erro{
+    margin-right: 20px;
+    width: 100%;
+  }
+
+  .error-box-success-dois{
+
+    width: 100%;
+  }
+
+  .error-box-success-dois p{
+    width: 100%;
+  }
+
 }
