@@ -658,20 +658,20 @@ body {
   .flex{
     display: grid;
     grid-template-columns: 20% 80%;
-	  grid-template-rows: 100px 100% ;
+	  grid-template-rows: 100px 685px ;
 	  grid-template-areas:
 		"lateral principal"
     "lateral principal" 
     ;
   }
 
-  .flex > div{
-    width: 100%;
-    height: 850px;
-  }
+
 
   /* Editar contatos */
-  /* EDIT */
+  #coluna-principal{
+    height: 785px;
+  }
+
   .edit-contact{
     width: 50%;
     height: 530px;
@@ -750,30 +750,35 @@ body {
   .flex{
     display: grid;
     grid-template-columns: 20% 80%;
-	  grid-template-rows: 100px 100% ;
+	  grid-template-rows: 100px 685px ;
 	  grid-template-areas:
 		"lateral principal"
     "lateral principal" 
     ;
   }
 
-  .flex > div{
-    width: 100%;
-    height: 760px;
-  }
+
 
   /* Editar contatos */
+  #coluna-principal{
+    height: 785px;
+  }
+
+  .scroll{
+    overflow-y: scroll;
+  }
+  /* EDIT */
   .edit-contact{
-    width: 35%;
+    width: 60%;
     height: 530px;
     position:relative;
-    top: 110px;
-    left: 350px;
+    top: 180px;
+    left: 200px;
 
   }
 
   .form-edit{
-    padding-left: 40px;
+    padding-left: 25px;
     padding-right: 20px;
   }
 
