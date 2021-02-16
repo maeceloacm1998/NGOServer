@@ -4,6 +4,8 @@
 
 <h1>NGO SOLUÇÕES - Banco de dados</h1> 
 
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
 <!-- CABEÇALHO -->
 <p> Nome: Marcelo Antônio Chaves Mendes &nbsp;&nbsp;&nbsp;&nbsp; Vaga: Estágio de Desenvolvedor &nbsp;&nbsp;&nbsp;&nbsp; Contato: (31) 99252-1566 </p> 
 
@@ -68,47 +70,110 @@ Tenho trabalhos que foram desenvolvidos dentro do âmbito estudantil, como:
 Meu objetivo é seguir a carreira como programador Full-Stack, me especializando na linguagem de JavaScript 
 e suas respectivas bibliotecas, como React, React Native, pois a programação hoje é um trabalho que me 
 possibilita fazer a diferença tanto para o meio empresarial, quanto ao lado humano, pois o produto final 
-sempre vai impactar algum usuário e com isso é possível fazer a diferença.
+sempre vai impactar algum usuário e com isso é possível faaazer a diferença.
 </p>
 
 <hr> <!-- Linha -->
 
-<br>
 <!-- Título -->
-<h1>REST API em Node.js, Express.js - Cadastro e manipulação de contatos</h1>
-<blockquout>Utilizando o MongoDB para o aramazenamento dos dados</blockquout>
+# REST API em Node.js, Express.js - Cadastro e manipulação de contatos
+> Utilizando o MongoDB para o aramazenamento dos dados
 
-<br>
 <!-- Descrição -->
-<p>Nessa aplicação foram criadas as seguintes funções: Criar contatos com nome, email e telefone, dashboard com todos contatos 
+Nessa aplicação foram criadas as seguintes funções: Criar contatos com nome, email e telefone, dashboard com todos contatos 
 criados, deletar contatos existentes, atualizar contato existente. Foi utilizado o Node.js com arquitetura REST, em conjunto 
-com o express.js para criar uma aplicação simples que crie uma lista de contatos. </p>
+com o express.js para criar uma aplicação simples que crie uma lista de contatos. 
 
-<br>
 <!-- Tecnologias utilizadas -->
-<h2>Tecnologias utilizadas</h2>
-<ul>
-  <li>Node.js 14.15.5</li>
-  <li>Insomnia</li>
-  <li>MongoDB 4.4</li>
-</ul>
+## Tecnologias utilizadas
+
+- Node.js 14.15.5
+- Insomnia
+- MongoDB 4.4
+
+
 <!-- Dependências -->
-<h2>Dependencias</h2>
-<ul>
-  <li>Express.js</li>
-  <li>Cors</li>
-  <li>Body-Parser</li>
-  <li>Mongoose</li>
-  <li> Nodemon (não é pré-requisito, mas facilita o uso) </li>
-</ul>
+## Dependencias
+
+- Express.js
+- Cors
+- Body-Parser
+- Mongoose
+- Nodemon (não é pré-requisito, mas facilita o uso) 
 
 ## Guia
 
 1. Faça FORK desse projeto para o seu repositório 
 2. Clone o repositório com o comando `git clone https://github.com/maeceloacm1998/NGOServerteste.git`
-3. Siga o diretório cd "<nome da sua pasta>/api" no terminal usando o "cd"
+3. Siga o diretório cd "nome da pasta /api" no terminal usando o "cd"
 4. Instalar todas as dependências utilizando `npm install dependencies`
+5. Recomendo instalar o yarn, baixando no link. <a href="https://classic.yarnpkg.com/en/docs/install/#windows-stable"> Clique aqui! <a/>
 5. Recomendo instalar o nodemon, utilizando `npm install nodemon`
 6. Após isso rodar a aplicação utilizando `nodemon src/server.js`
+7. Caso tenha instalado o Yarn, utilize `yarn dev` para rodar a aplicação.
+  
+## Arquitetura REST
+A seguir está uma configuração generica do localhost na posta 3333.
+
+- Lista de contatos - GET: http://localhost:3333/contact
+  .Caso tenha algum contato já cadastrado no banco de dados, ele vai retornar o **NOME**, **EMAIL** e **TELEFONE** de cada um.
+  
+- Criação de contatos - POST: http://localhost:3333/createcontact
+  .Usado para criar um contato novo contendo **NOME**, **EMAIL** e **TELEFONE** de cada contato.
+  
+- Lista de contatos - PUT: http://localhost:3333/update/:id_contatos'
+  .Usado para atualizar o contato que você desejar. Para isso você vai inserir o _id que cada contato tem e inserir na URL depois do `update/`.  
+  
+- Lista de contatos - DELETE: http://localhost:3333/delete/:id_contato
+  .Usado para deletar um contato da lista. Para isso você vai inserir o _id que cada contato tem e inserir na URL depois do `delete/`.
+  
+## Estrutura da Api REST
+A estrutura da api consiste:
+
+```
+src/
+│
+└─ controller
+   │      └─ ControllContatos.js    
+   ├─ model
+   │      └─ Contact.js   
+   └─ app.js
+   └─ routes.js
+   └─ server.js
+```
+
+**####src/app.js**
+
+Aqui encontra-se toda a estrutura da minha aplicação como a chamada para as rotas, os middlewares, a inclusão das dependências,
+os constructores e a conexão com o MongoDB.
+
+**####src/routes.js**
+
+Aqui encontra-se todas as rotas para cada tipo de requisição.
+
+**####src/server.js**
+
+Aqui encontra-se apenas a porta que meu servidor local vai utilizar.
+
+**####src/controller/ControllContatos.js**
+
+Nessa sessão temos todas estruturas de requisição de contatos com os parametros GET, POST, PUT e DELETE.
+
+**####src/model/Contact.js**
+
+Nessa sessão temos o Schema e o Model dos contatos que será passado para o meu banco de dados.
+
+# Testes
+Foram totalmente realizados no ambiente automatizado do Insominia, onde foi criado uma collection com 4 testes, comprovando o sucesso de cada funcionalidade. Os testes que foram feitos nesse caso podem ser vistos na figura abaixo, logo na aba a esquerda. O Insominia é uma ferramenta extremamente útil para se testar manualmente ou automatizar os testes de qualquer API REST.
+
+# Créditos
+Essa API foi desenvolvida e documentada por Marcelo Antônio Chaves Mendes, no dia 16/02/2021.
 
 
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/maeceloacm1998
+[product-screenshot]: images/screenshot.png
