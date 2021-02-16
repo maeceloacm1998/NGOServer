@@ -24,83 +24,6 @@ body {
   padding: 0px 30px;
 }
 
-#login{
-  display: flex;
-}
-
-#login li a{
-  font-family: 'Reem Kufi', sans-serif;
-  font-size: 1.2em;
-  margin: 0px 10px;
-  padding: 5px;
-  text-align: center;
-  line-height: 1em;
-  cursor: pointer;
-}
-
-/************** Classe para botão de registrar **************/
-.botao{
-  color: black;
-  line-height: 50px;
-	height: 50px;
-	text-align: center;
-	cursor: pointer;
-}
-
-.botao:hover{
-  color: black;
-}
-
-/************** Efeito de botão de registrar **************/
-.btn-one {
-	color: rgb(0, 0, 0);
-	transition: all 0.3s;
-	position: relative;
-}
-.btn-one span {
-	transition: all 0.3s;
-}
-.btn-one::before {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	opacity: 0;
-	transition: all 0.3s;
-	border-top-width: 1px;
-	border-bottom-width: 1px;
-	border-top-style: solid;
-	border-bottom-style: solid;
-	border-top-color: rgba(0, 0, 0, 0.411);
-	border-bottom-color: rgba(0, 0, 0, 0.411);
-	transform: scale(0.1, 1);
-}
-.btn-one:hover span {
-	letter-spacing: 5px;
-}
-.btn-one:hover::before {
-	opacity: 1;	
-	transform: scale(1, 1);	
-}
-.btn-one::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	transition: all 0.3s;
-  background-color: rgba(255, 255, 255, 0.226);
-  border-radius: 5px;
-}
-.btn-one:hover::after {
-	opacity: 0;	
-	transform: scale(0.1, 1);
-}
 
 /*MAIN*/ 
 
@@ -135,11 +58,22 @@ body {
   margin: 0 auto;
   height: 50px;
   font-size: 1.2em;
+  cursor: pointer;
+  outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
 }
 
 #coluna-lateral ul li button:hover{
  background-color: rgb(236, 236, 236);
  color: rgb(0, 0, 0);
+}
+
+/*** Efeito botões de paginação ***/
+#btn-contact,
+#btn-viwnCreateContact{
+  cursor: default;
+  color: #919191;
 }
 
 
@@ -212,19 +146,90 @@ body {
   margin-top: 85px;
   font-size: 15px;
   cursor: pointer;
+  outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
 }
+
+#edit-contact{
+  outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+#delete-contact{
+  outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
 
 .container-btn button:hover{
   transition:  all 0.5s;
   background-color: rgb(236, 236, 236);
 }
 
+/*** Manipulação div para editar contatos ***/
+.edit-contact{
+  position:absolute;
+  top: 250px;
+  left: 800px;
+  width: 371px;
+  height: 500px;
+  z-index: 10;
+  border-radius: 10px ;
+  background: #eeeeee;
+}
+
+.titulo {
+	grid-area: titulo;
+}
+
+.exit {
+	grid-area: exit;
+}
+
+.header-edit{
+  border-radius:10px 10px 0px 0px;
+  background-image: linear-gradient( to bottom,
+  #ffe71273,#FFC700 );
+  height: 50px;
+  display: grid;
+  grid-template-columns: 90% 10%;
+	grid-template-rows: 50px ;
+	grid-template-areas:
+		"titulo exit"
+	;
+}
+
+.header-edit p{
+  margin-top: 5px;
+  margin-left: 20px;
+  font-size: 1.5em;
+}
+
+.header-edit button{
+  border: none;
+  background: none;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+  outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+.form-edit{
+   padding-top: 20px;
+   padding-left: 20px;
+}
+
 /************** Container de Criar Contatos **************/
 #formulario{
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 40px;
 }
-
 
 .nome {
 	grid-area: nome;
@@ -241,17 +246,28 @@ body {
   grid-area: botao;
 }
 
-.grid-template-areas-2 {
-  display: grid;
-	grid-template-columns: 100%;
-	grid-template-rows: 80px 80px 80px 50px;
-	grid-template-areas:
-		"nome"
-    "email"
-    "telefone"
-    "botao"
+.conteudo-extra{
+  grid-area: lateral;
 }
 
+.error-box{
+  grid-area: message;
+}
+
+.grid-template-areas-2 {
+  display: grid;
+	grid-template-columns: 70% 30%;
+	grid-template-rows: 80px 80px 80px 50px 480px;
+	grid-template-areas:
+		"nome lateral"
+    "email lateral"
+    "telefone lateral"
+    "botao lateral"
+    "message lateral"
+    ;
+}
+
+/*** Barra de menu ***/
 .nome input,
 .email input,
 .telefone input{
@@ -260,7 +276,16 @@ body {
   border: 1px solid rgb(190, 190, 190);
   border-radius: 5px;
   height: 35px;
-  width: 300px;
+  width: 320px;
+  outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+.nome input:hover,
+.email input:hover,
+.telefone input:hover{
+  border: 2px solid rgb(129, 129, 129);
 }
 
 .nome p,
@@ -272,9 +297,206 @@ body {
 
 .btn-enviar button{
   font-family: 'Reem Kufi', sans-serif;
+  margin-top: 10px;
+  margin-left: 218px;
   padding: 5px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+  outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
 }
 
+.btn-enviar button:hover{
+  background: #f5f5f5;
+}
+
+/*** Barra lateral ***/
+.conteudo-extra{
+  border-left: 1px solid rgb(172, 172, 172);
+  padding: 0px 80px;
+}
+
+.conteudo-extra p{
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+/** Caixa de mensagem **/
+.error-box-success{
+  border: 2px solid rgba(0, 255, 115, 0.151);
+  border-radius: 10px;
+  background-color: #03fa2411;
+  margin-top: 30px;
+  height: 100px;
+  width: 800px;
+}
+
+.error-box-success p{
+  margin-top: 30px;
+  font-size: 1.5em;
+  font-family: 'Reem Kufi', sans-serif;
+  text-align: center;
+  color: #3cff00;
+}
+
+.error-box-success-dois{
+  border: 2px solid rgba(0, 255, 115, 0.151);
+  border-radius: 10px;
+  background-color: #03fa2411;
+  margin-top: 20px;
+  height: 100px;
+  width: 330px;
+}
+
+.error-box-success-dois p{
+  margin-top: 15px;
+  font-size: 1.5em;
+  font-family: 'Reem Kufi', sans-serif;
+  text-align: center;
+  color: #3cff00;
+}
+
+.error-box-erro{
+  border: 2px solid rgba(255, 0, 0, 0.151);
+  border-radius: 10px;
+  background-color: #fa030311;
+  margin-top: 30px;
+  height: 100px;
+  width: 800px;
+}
+
+.error-box-erro p{
+  margin-top: 30px;
+  font-size: 1.5em;
+  font-family: 'Reem Kufi', sans-serif;
+  text-align: center;
+  color: #ff0000;
+}
+
+@media screen and (min-width:300px) and (max-width:425px){
 
 
+  .none{
+    display: none;
+  }
 
+  #coluna-lateral{
+    grid-area: lateral;
+  }
+
+  #coluna-principal{
+    grid-area: principal;
+  } 
+
+  .flex{
+    display: grid;
+    grid-template-columns: 10% 90%;
+	  grid-template-rows: 100px 100% ;
+	  grid-template-areas:
+		"lateral lateral"
+    "principal principal" 
+    ;
+  }
+
+  .flex > div{
+    width: 100%;
+    height: 450px; 
+  }
+
+  /* Coluna principal */
+  .grid-template-areas-1 {
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 200px ;
+    grid-template-areas:
+      "contatos botao"
+      "contatos botao"
+    ;
+  }
+
+  /* EDIT */
+  .edit-contact{
+    width: 100%;
+    height: 500px;
+    position:relative;
+    top: 0px;
+    left: 0px;
+  }
+
+  .form-edit{
+   padding-right: 20px;
+ }
+
+ .header-edit{
+  border-radius:0px;
+  
+}
+
+  /* Coluna lateral */
+  #formulario{
+    margin-right: 40px;
+  }
+
+  .grid-template-areas-2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 80px 80px 40px 200px;
+    grid-template-areas:
+      "nome "
+      "email "
+      "telefone "
+      "botao "
+      "message "
+      ;
+  }
+
+  .error-box-success{
+    width: 100%;
+  }
+
+  .error-box-erro{
+    width: 100%;
+  }
+
+  .nome input,
+  .email input,
+  .telefone input{
+    width: 100%;
+  }
+
+  .btn-enviar{
+    width: 100%;
+  }
+
+  .btn-enviar button{
+    margin-left: 0px;
+  }
+
+  
+}
+
+@media screen and (min-width:430px) and (max-width:1024px){
+
+  .none{
+    display: none;
+  }
+
+  /* Coluna Lateral */
+  .grid-template-areas-2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 80px 80px 40px 200px;
+    grid-template-areas:
+      "nome "
+      "email "
+      "telefone "
+      "botao "
+      "message "
+      ;
+  }
+
+ 
+}

@@ -9,6 +9,7 @@
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/ca6d8abecc.js" crossorigin="anonymous"></script>
     <!-- Title-->
     <title>NGO Banco de dados</title>
@@ -20,12 +21,6 @@
     <header id="header">
       <!--Logo-->
       <a href=""><img src="./imagens/logo.png" width="200px" alt=""></a>
-      
-      <!--Botão de login e registrar-->
-      <nav id="login">
-          <li><a href=""  class="botao" >Login</a></li>
-          <li><a href="" class="botao btn-one" >Cadastrar</a></li>
-      </nav>
     </header>
 
     
@@ -34,63 +29,20 @@
       <!-- Coluna Lateral -->
       <div id="coluna-lateral">
         <ul>
-          <li><button id="btn-contact" ><i class="fas fa-user-plus"></i> Visualizar contatos</button></li>
-          <li><button id="btn-viwnCreateContact"> <i class="fas fa-address-book"></i> Criar contatos</button></li>
+          <li><button id="btn-contact" ><i class="fas fa-address-book"></i> Visualizar contatos</button></li>
+          <li><button id="btn-viwnCreateContact"> <i class="fas fa-user-plus"></i> Criar contatos</button></li>
         </ul>
       </div>
-      
-      <!-- Botão VIZUALISAR CONTATOS -->
+
+      <!-- Visualização dos botões VIZUALISAR CONTATOS / CRIAR CONTATOS -->
       <div id="coluna-principal" class="scroll">      
-          <!-- Contatos -->
-      </div>
-
-      <!-- Botão CRIAR CONTATOS -->
-      <div id="coluna-criarContatos">    
-        
-        <div class="cabecalho">
-          <h2><i class="fas fa-user-plus"></i> Criar Contatos</h2>
-        </div>
-
-        <form id="formulario" >  
-          <div class="grid-template-areas-2">
-            <div class="nome">
-              <p>Nome:</p>
-              <input type="text" id="nome">
-            </div>
-            
-            <div class="email">
-              <p>Email:</p>
-              <input type="text" id="email">
-            </div>
-            <div class="telefone">
-              <p>Telefone:</p>
-              <input type="text" id="telefone">
-            </div>
-            
-            <div class="btn-enviar">
-              <button type="submit" id="botao"> <i class="fas fa-arrow-right"></i> Enviar</button>
-            </div>
-          </div>
-          
-        </form>
-
+        <!-- exibição de conteúdo  -->
       </div>
 
 
     </main>
 
-    <!-- Chamada JavaScrip interno -->
+    <!-- Chamada JavaScript interno -->
     <script src="./methodes.js"></script>
-
-    <!-- Chamada do Jquery e booststrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-    </script>
   </body>
 </html>

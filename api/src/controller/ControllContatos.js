@@ -25,16 +25,16 @@ class ControllContato {
     });
 
     if (contato.length !== 0) {
-      res.json({ 'Esse contato ja foi criado:': contato });
+      res.json('Esse contato ja foi criado.');
     } else {
-      const createContato = await Conteudo.create({
+      await Conteudo.create({
         nome,
         email,
         telefone,
         status,
       });
 
-      res.json({ 'Usuário Criado:': createContato });
+      res.json('Usuário Criado com sucesso !!!');
     }
   }
 
@@ -49,7 +49,7 @@ class ControllContato {
       telefone,
     });
 
-    res.json('Esse contato foi atualizado com sucesso');
+    res.json('Esse contato foi atualizado com sucesso !!!');
   }
 
   // Deletando o contato
@@ -58,7 +58,7 @@ class ControllContato {
     const { id_contatos } = req.params;
 
     await Conteudo.findByIdAndDelete({ _id: id_contatos });
-    res.json('Contato foi deletado com sucesso !');
+    res.json('Contato excluido com sucesso');
   }
 }
 
