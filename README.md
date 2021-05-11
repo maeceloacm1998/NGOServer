@@ -2,25 +2,7 @@
 ![](frontand/imagens/logo.png)
 <img scr="frontand/imagens/logo.png">  <!-- Imagem -->
 
-
-<h1>Sobre mim:</h1>
-
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-<p>Me chamo Marcelo, tenho 22 anos, nasci na cidade de Belo Horizonte - MG, faço Sistemas de Informação na PUC-MG. Estou cursando o 2º período e sou apaixonado por tecnologia desde a infância, pois sempre tive contato com eletrônicos e interesse em aprender como eles funcionavam.</p>
-
-<p>Comecei no mercado de trabalho no ano de 2018 na empresa Popular Cred, como atendente de Call Center, realizando vendas de crédito consignado do banco BMG. Fiquei por 5 meses e essa experiência desenvolveu muito a minha capacidade de comunicação. </p>
-
-<p>No ano de 2020 iniciei na Arte Brilho como secretário no Hospital Metropolitano Dr. Célio De Castro, trabalhando na organização de documentos, agendas e atendimento ao público geral. Como ferista, passei por diversos setores da empresa, tendo que me adaptar a diversas situações e funções que me eram impostas. Foi um desafio que me agregou a habilidade para resolução de problemas, mecanismo de rápida aprendizagem diante dos treinamentos e o conhecimento próprio. Outro ponto a acrescentar é que naquele ambiente, é essencial como conduta de um funcionário, ser empático com o público e disponível para ajudar, um dos motivos que eu relaciono com o meu gosto de programar, pois enxergo que ao realizar os meus projetos, eu posso usá-los para o benefício do outro. 
- </p>
-<p>Antes mesmo de entrar na faculdade, eu comecei a aprender programação através de cursos na plataforma da Udemy, como o de desenvolvimento WEB, que aborda as linguagens HTML. Ao iniciar a graduação de Sistemas de Informação na PUC-MG, eu comecei a ter diversas experiências de como são os processos de produção de uma aplicação. Realizei outros cursos da Udemy de CSS, JavaScript e continuo estudando pela plataforma os cursos de Construção de API com NODEJS, usando banco de dados NOSQL, MySQL e design de interfaces UI com foco em UX. 
-</p>
-<p>Dentro do ambiente estudantil desenvolvi projetos como o "Venda de máscaras", que consiste na aplicação de conceitos básicos de repetição, como For, While, Switch/Case em Java. Também o "SerachMed - Procura médica",  que foi  feito como trabalho final da matéria de Desenvolvimento Web, realizado com a ajuda de outros colegas de classe, utilizando as linguagens HTML, CSS e JavaScript, tendo como foco o armazenamento de dados no LocalStorage. </p>
-<p>Sei que virão muitos desafios pela frente, que irão exigir muito foco e disciplina da minha parte, mas meu objetivo é seguir a carreira como programador Full-Stack, me especializando na linguagem de JavaScript e suas respectivas bibliotecas, como React, React Native. A programação hoje, é um trabalho que me possibilita fazer a diferença tanto para o meio empresarial, quanto ao lado humano, porque toda aplicação construída é feita para algum público e a mesma pode fazer diferença na rotina e na vida do ambiente que é inserida. Diante disso, acredito que construir algo que possa ajudar o outro na resolução de algum problema é um objetivo que a área de tecnologia pode me proporcionar e que me gerará grande satisfação.</p>
-
-
-<!-- Experiência profissional -->
-
 
 <hr> <!-- Linha -->
 
