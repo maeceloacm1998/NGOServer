@@ -37,14 +37,13 @@ com o express.js para criar uma aplicação simples que crie uma lista de contat
 1. Faça FORK desse projeto para o seu repositório 
 2. Clone o repositório com o comando `git clone https://github.com/maeceloacm1998/NGOServerteste.git`
 3. Siga o diretório cd "nome da pasta /api" no terminal usando o "cd"
-4. Instalar todas as dependências utilizando `npm install dependencies`
+4. Instalar todas as dependências utilizando `npm install`
 5. Recomendo instalar o yarn, baixando no link. <a href="https://classic.yarnpkg.com/en/docs/install/#windows-stable"> Clique aqui! <a/>
 5. Recomendo instalar o nodemon, utilizando `npm install nodemon`
 6. Após isso rodar a aplicação utilizando `nodemon src/server.js`
-7. Caso tenha instalado o Yarn, utilize `yarn dev` para rodar a aplicação.
   
 ## Arquitetura REST
-A seguir está uma configuração generica do localhost na posta 3333.
+A seguir está uma configuração generica do localhost na porta local 3333.
 
 - Lista de contatos - GET: http://localhost:3333/contact
   .Caso tenha algum contato já cadastrado no banco de dados, ele vai retornar o **NOME**, **EMAIL** e **TELEFONE** de cada um.
@@ -102,8 +101,6 @@ Foram totalmente realizados no ambiente automatizado do Insominia, onde foi cria
 
 # Créditos
 Essa API foi desenvolvida e documentada por Marcelo Antônio Chaves Mendes, no dia 16/02/2021.
-
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
